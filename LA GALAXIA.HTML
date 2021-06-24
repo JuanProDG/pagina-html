@@ -1,0 +1,214 @@
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="weirdtext">La galaxia</p>
+
+    <author>Barush</author>
+
+<style>
+    /* https://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+/*Above is my default quick CSS reset I always use, doesn't really matter for this example though, you can delete it.*/
+
+
+
+body{
+	background:url("data:image/jpeg;base64,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");
+	font-family: sans-serif;
+	font-size: 70px;
+	line-height: 40px;
+	letter-spacing: 2px;
+	padding: 40px;
+	color: rgb(255, 255, 255);
+	text-align:center;
+}
+
+
+/*Center the weird text*/
+#weirdtext{
+	max-width: 500px;
+	display: block;
+	margin: 50px auto 20px auto;
+}
+
+/*Just the CSS for the quote citation*/
+author{
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+	text-align: right;
+	opacity: .5;
+	font-size:20px;
+}
+
+/*all spans have to be block or inline block to transform*/
+#weirdtext span{
+	display: inline-block;
+}
+
+/*When JS finds a space, it replaces it with a span with .space class*/
+/*I did this so you can do stuff with the spaces if you want.*/
+.space{
+	width: 15px;
+}
+
+
+/*These classes are added to each letter/span using JS so they animate*/
+.effect1{
+	animation: zoom 6s linear infinite;
+	-webkit-animation: zoom 6s linear infinite;
+}
+.effect2{
+	animation: bounce 3s linear infinite;
+	-webkit-animation: bounce 3s linear infinite;
+}
+.effect3{
+	animation: squash 2s linear infinite;
+	-webkit-animation: squash 2s linear infinite;	
+}
+.effect4{
+	animation: rot 5s linear infinite;
+	-webkit-animation: rot 5s linear infinite;
+}
+.effect5{
+	animation: fade2 4s linear infinite;
+	-webkit-animation: fade2 4s linear infinite;
+}
+
+
+
+
+/*Here's a bunch of animations*/
+
+@keyframes zoom{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+@-webkit-keyframes zoom{
+	0%{-webkit-transform: scale(1);}
+	50%{-webkit-transform: scale(1.1);}
+	100%{-webkit-transform: scale(1);}
+}
+
+@keyframes bounce{
+	0%{transform: translateY(0px);}
+	50%{transform: translateY(1px);}
+	100%{transform: translateY(0px);}
+}
+@-webkit-keyframes bounce{
+	0%{-webkit-transform: translateY(0px);}
+	50%{-webkit-transform: translateY(1px);}
+	100%{-webkit-transform: translateY(0px);}
+}
+
+@keyframes squash{
+	0%{transform:scale(1,1);}
+	50%{transform:scale(1,1.2);}
+	100%{transform:scale(1,1);}
+}
+@-webkit-keyframes squash{
+	0%{-webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(1,1.2);}
+	100%{-webkit-transform:scale(1,1);}
+}
+
+@keyframes rot{
+	0%{transform: rotate(9deg);}
+	50%{transform: rotate(-9deg);}
+	100%{transform: rotate(9deg);}
+}
+@-webkit-keyframes rot{
+	0%{-webkit-transform: rotate(9deg);}
+	50%{-webkit-transform: rotate(-9deg);}
+	100%{-webkit-transform: rotate(9deg);}
+}
+
+@keyframes fade2{
+	0%{
+		transform: scale(.8);
+		opacity: .7;
+	}
+	50%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(.8);
+		opacity: .7;
+	}
+}
+@-webkit-keyframes fade2{
+	0%{
+		-webkit-transform: scale(.8);
+		opacity: .7;
+	}
+	50%{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: scale(.8);
+		opacity: .7;
+	}
+}
+</style>
+
+<script>
+//requires jQuery because I am lazy.
+
+
+$(document).ready(function(){
+	setup();
+});
+
+
+function setup(){
+	
+	var $passage = $('#weirdtext');
+	
+	//get the inner HTML of the #weirdtext paragraph
+	var rawtxt = $passage.html();
+	
+	//Get the length of the string for use in loop
+	var len = rawtxt.length;
+	
+	//empty string used to store final text that includes spans
+	var newtext = '';
+
+	
+	//For each character inside #weirdtext string (this is why we got length)
+	for(var i = 0; i < len; i ++){
+		
+		//get a random num between 1 and 5
+		var rng = Math.floor(Math.random() * 5) + 1;
+		
+		//get the i-th character from the string
+		var currentchar = rawtxt.charAt(i);
+		if(currentchar == ' '){
+			//if it's a space, add an empty .space span
+			var newchar = '<span class="space"></span>';
+		}
+		else{
+			//otherwise, wrap it with a span, and give it class effectN, where N is a random int as before
+			var newchar = '<span class="effect' + rng + '">' + currentchar + '</span>';
+		}
+		//add this new "char" (actually it's a char with spans wrapping it) to the empty string
+		newtext = newtext + newchar;
+	}
+	
+	//replace #weirdtext paragraphs inner HTML with the newly created string
+	$passage.html(newtext);
+	
+}
+</script>
+
+
+
+</body>
+</html>
